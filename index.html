@@ -32,6 +32,8 @@
 @media (min-width:1500px){.toolbar .tool-button{height:43px}}
 @media (min-width:701px){.panel-header{display:none}}
  .source-editor::placeholder{color:#6f8194;-webkit-text-fill-color:#6f8194}
+@keyframes previewCommonmarkReveal{from{opacity:0;transform:translateY(7px);filter:blur(1.5px)}to{opacity:1;transform:none;filter:none}}@keyframes previewGfmReveal{from{opacity:0;transform:translateY(4px) scaleY(.94);transform-origin:top}to{opacity:1;transform:none}}@keyframes previewDiscordReveal{from{opacity:0;transform:translateX(-7px);filter:blur(1px)}to{opacity:1;transform:none;filter:none}}.preview-animate{will-change:opacity,transform}.preview-animate-commonmark{animation:previewCommonmarkReveal .48s cubic-bezier(.22,.8,.24,1) both}.preview-animate-gfm{animation:previewGfmReveal .46s cubic-bezier(.22,.8,.24,1) both}.preview-animate-discord{animation:previewDiscordReveal .42s cubic-bezier(.22,.8,.24,1) both}@media (prefers-reduced-motion:reduce){.preview-animate{animation:none!important;will-change:auto}}
+.preview-animate-live.preview-animate-commonmark{animation-duration:.24s}.preview-animate-live.preview-animate-gfm{animation-duration:.24s}.preview-animate-live.preview-animate-discord{animation-duration:.22s}
 </style>
 </head>
 <body>
